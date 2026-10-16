@@ -14,3 +14,7 @@ The execution modules and schematic are original guidance for this repository, n
 For the 0.2.0 research update, see [the six-project comparison](./comparison.md), [中文](./comparison.zh-CN.md), and [exact inspected snapshots](./research-snapshots.json). Adopted concepts were independently authored into the local rules; no third-party implementation or whole-rule translation is bundled. The guarded upstream correction is a separate repository-development artifact, not an installed runtime dependency.
 
 [Reasoning Workflow](https://github.com/zy839971925-zyy/Agent--deep-research-Workflow-Skills) is only linked. Its contents, ownership and license remain upstream. Design decisions suggested by this Skill still require project-specific evidence.
+
+## Public historical source cases (0.3.0)
+
+Three actual upstream fixes, with pinned commit/parent source references and retained licenses, are catalogued in [docs/examples](./examples/README.md). They are explanatory evidence, not bundled runtime dependencies or fixes authored by this Skill. No private-source case is published.
