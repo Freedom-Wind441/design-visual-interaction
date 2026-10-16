@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual & Interaction Design"
+  short_description: "Improve UI consistency through focused, verified changes"
+  default_prompt: "Use $design-visual-interaction to inspect this project and implement focused visual and interaction improvements while preserving its identity and behavior."
