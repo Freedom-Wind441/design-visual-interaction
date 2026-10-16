@@ -1,0 +1,22 @@
+{
+  "sha256": {
+    "LICENSE": "2554f9f773fe6eb46e03ac060d677e9bca28d53a48e6f15522e0a8fb0d7e0d8e",
+    "SKILL.md": "bbe9fedf9256555289d6ca90ceaef5e947e9aa9800ab835e8771b3a8a046c288",
+    "agents/openai.yaml": "a71993d9cc43e4f9f3da1a7a17a9f4ba09d7102dc751ad688f1717eac7479ae5",
+    "assets/component-anatomy.svg": "6452eb107b6586e62eb3dd434ae99338fd1b5bdbe5ef47134da19acb9d6a1f1f",
+    "assets/task-hierarchy.svg": "8c8e00baaa9d4f1027deedaca94d88c10040e25028219ab121bf901bf7ba7afd",
+    "references/buttons.md": "76429613343ffb08a66019f9ae2e4c19cd64543443241b17c99c35f110839870",
+    "references/dock-navigation.md": "7c9a9db09178269fd706dd5912ed45472433d6964f209fe0d45adedb707faaf6",
+    "references/materials-color.md": "e5d82b59b8aa49e060f03f55b3e497a1ee498971c44380f27a6673705785cbc7",
+    "references/motion-feedback.md": "a1d79c9b84f0de77e9a007d5a02b0f9212fa91113ba0739dd9c4a42afda79bc5",
+    "references/platform-adaptation.md": "81c3f4a735116eb7a94cac528066288d21ad6bcf0b54a9e0bd5646407d177404",
+    "references/project-baseline.md": "fe9ebbad35bcb5a037f6938249807275f41e0627f10968294a4d9465f25ee4f8",
+    "references/settings-onboarding.md": "03ad688299b81f04991bd18fd91a00080ea43c14168420f1705ee452a11aac93",
+    "references/sliders-input.md": "23ac9af52cb6f68f6eca23e5c36ac50612f8626b0c3ffba2db021c3244367e20",
+    "references/style-liquid-glass.md": "04ec9045b636a012e96c234664fe494053e36f500f42a85dd852501c83c41cfa",
+    "references/typography-layout.md": "9756b67f9538a000864881085dabb867ffedb8fb83695e627e4976a0163692e7",
+    "references/verification.md": "8f497a8a74743d24fa1760a3e9839f74892bcc0abd6770b44793b2f54762201e",
+    "references/visual-composition.md": "2920d40c1d4bcad4612c12342afe814cf7fde4f096359c187ae148a1a14baf8d"
+  },
+  "version": "0.2.0"
+}
