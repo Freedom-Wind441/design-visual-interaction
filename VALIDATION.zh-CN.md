@@ -2,7 +2,7 @@
 
 [English](./VALIDATION.md)
 
-版本：**0.2.0**；日期：2026-10-16（Asia/Shanghai）。
+版本：**0.3.0**；日期：2026-10-16（Asia/Shanghai）。
 
 ## 验证范围
 
@@ -13,12 +13,13 @@
 ```bash
 python -m pip install -r requirements-dev.txt
 python scripts/validate.py
+node scripts/check_public_examples.cjs
 python -m unittest discover -s tests
 node --test docs/evaluation/button-case/press.test.cjs
 ```
 
 - Skill Creator 的 `quick_validate.py` 接受此入口。
-- 仓库验证器检查必需元数据、12 个可达模块与统一章节、17 文件白名单、本地链接/锚点、SVG XML、MIT 副本、版本、限定模式的隐私/占位内容、SHA-256 清单和独立校验的干净安装布局复制。
+- 仓库验证器检查必需元数据、13 个可达模块与统一章节、18 文件白名单、本地链接/锚点、SVG XML、MIT 副本、版本、限定模式的隐私/占位内容、SHA-256 清单和独立校验的干净安装布局复制。
 - 7 项发布契约测试覆盖有效副本，以及重复元数据、缺模块、越界引用、本机路径、符号链接和指纹变化的拒绝路径。
 - 另有 3 项测试验证上游修改脚本的定点修改、源文件变化拒绝和重复应用拒绝。
 - 14 项 Node 事件模型测试覆盖取消/释放、捕获丢失、焦点/生命周期、禁用/移除、资源清理、无关指针、共享按钮及滑块/动作行为保留。
@@ -27,9 +28,21 @@ node --test docs/evaluation/button-case/press.test.cjs
 
 模式扫描仅覆盖安装目录中的已知模式，不是完整秘密扫描器，也不能证明绝无个人信息。外部链接与徽章可用性不做持续监测。
 
+## 本轮规则演练
+
+新的隔离按钮任务观察到：新执行者只替换 Save 两条样式，复用时长/曲线/缩放 token 并继承减少动态效果；主执行者独立比较输出，确认主题与原生按钮语义保留。Chromium 不可用，未取得渲染验收。[任务及原始前后文件](./docs/evaluation/token-case/TASK.md)。
+
+以上支持所列合成样例契约及单次路由观察；三组公开项目历史源码案例另列如下；通用规则仍是约束政策，需要更多实际结果支持，不声称已获普遍验证。
+
+## 公开源码案例检查
+
+[三组真实上游案例](./docs/examples/README.zh-CN.md)使用固定commit/父版本的实际片段，保留Apache-2.0及NOTICE、MIT和BSD-3-Clause许可；已读取原源码及相关差分/测试，片段指纹见[记录](./docs/examples/public-provenance.json)。
+
+`node scripts/check_public_examples.cjs` 对前后源码分别执行8项JS替身/闭包契约：按压捕获旧版3/4、后版4/4；滑块提交旧版3/4、后版4/4。另对实际Dart表达式做3项静态优先级检查，旧版0/3、后版3/3。预期旧版失败用于建立反例，不能记为旧版通过。未执行完整hooks/组件、拖动索引选择、浏览器派发或Flutter运行时；没有重跑上游套件，Radix该commit也未含测试文件。不将历史修复归功于本Skill。
+
 ## 隔离演练
 
-前三个与本轮新增两个独立执行者仅取得 Skill 路径与各自任务材料，未取得预设答案或根因。输入与观察见 [docs/evaluation/results.md](./docs/evaluation/results.md)。这是小样本定性演练，不是通用效果基准。
+初期三个、0.2.0 新增两个以及 0.3.0 新增一个 token 任务执行者仅取得 Skill 路径与各自任务材料，未取得预设答案或根因。输入与观察见 [docs/evaluation/results.md](./docs/evaluation/results.md)。这是小样本定性演练，不是通用效果基准。
 
 | 案例 | 观察结果 | 边界 |
 | --- | --- | --- |
@@ -37,6 +50,7 @@ node --test docs/evaluation/button-case/press.test.cjs
 | 新桌面项目 | 提供基线和代表流程方案，保留系统字体/实色表面，未实施 | 参数仍是提案，没有运行应用 |
 | 静态层级材料 | 保留已认可方向与内容，提出三项局部方案，区分设计假设与观察 | 没有直接源码、渲染或行为验收 |
 | Web/Compose 适配材料 | 未将 CSS 尺寸/ARIA/模糊强套到原生，保留成熟控件 | 未确认实际缺陷或平台符合性 |
+| 既有 token 按钮任务 | 只改两条声明，复用已有主题与按压 token | 仅源码对照；Chromium 不可用 |
 | 仅口述滑块卡顿 | 区分现象与假设，不直接认定需全面重构，提出取证范围 | 无源码/运行条件，根因未确定 |
 
 按钮执行者尝试本地浏览器检查，但缺少 Chromium，没有安装浏览器或部署。事件样例使用合成 DOM/事件表面，不是可直接投产的组件库。

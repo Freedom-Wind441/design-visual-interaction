@@ -1,0 +1,5 @@
+function handleSlideEnd() {
+      const hasChanged = String(values) !== String(valuesBeforeSlideStartRef.current);
+      if (hasChanged) onValueCommit(values);
+    }
+

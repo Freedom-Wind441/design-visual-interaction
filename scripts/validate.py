@@ -16,7 +16,7 @@ REFERENCES = {
     "project-baseline", "dock-navigation", "buttons", "typography-layout",
     "sliders-input", "settings-onboarding", "motion-feedback",
     "materials-color", "style-liquid-glass", "verification",
-    "visual-composition", "platform-adaptation",
+    "visual-composition", "platform-adaptation", "worked-examples",
 }
 EXPECTED = {"SKILL.md", "LICENSE", "agents/openai.yaml",
             "assets/component-anatomy.svg", "assets/task-hierarchy.svg"} | {

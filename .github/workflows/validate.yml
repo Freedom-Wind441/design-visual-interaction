@@ -19,5 +19,7 @@ jobs:
         run: python3 scripts/validate.py
       - name: Exercise release-contract failures
         run: python3 -m unittest discover -s tests
+      - name: Check public upstream excerpts
+        run: node scripts/check_public_examples.cjs
       - name: Exercise button event-model fixture
         run: node --test docs/evaluation/button-case/press.test.cjs

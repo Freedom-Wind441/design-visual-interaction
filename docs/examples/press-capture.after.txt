@@ -1,0 +1,10 @@
+if ('releasePointerCapture' in target) {
+            if ('hasPointerCapture' in target) {
+              if (target.hasPointerCapture(e.pointerId)) {
+                target.releasePointerCapture(e.pointerId);
+              }
+            } else {
+              (target as Element).releasePointerCapture(e.pointerId);
+            }
+          }
+

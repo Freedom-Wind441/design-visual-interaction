@@ -8,7 +8,7 @@ A modular Agent Skill for UI consistency, focused interaction fixes, and gradual
 
 **English** · [简体中文](./README.zh-CN.md)
 
-[![Version](https://img.shields.io/badge/version-0.2.0-2563eb)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.3.0-2563eb)](./CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-475569)](./LICENSE)
 [![Validation](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml/badge.svg)](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml)
 
@@ -25,8 +25,10 @@ A modular Agent Skill for UI consistency, focused interaction fixes, and gradual
 In Codex with `$skill-installer`, ask:
 
 ```text
-$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/main/skills/design-visual-interaction
+$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/v0.3.0/skills/design-visual-interaction
 ```
+
+Pin **v0.3.0** for reproducible use. `main` is the development branch; upgrade deliberately after reviewing the changelog.
 
 Then describe the outcome in ordinary language:
 
@@ -43,7 +45,7 @@ The agent selects the necessary modules. You do not need to learn the file struc
 
 Copy the entire [`skills/design-visual-interaction/`](./skills/design-visual-interaction/) folder into your host's documented skill location. For Codex, project and user locations are `.agents/skills/design-visual-interaction/` and `~/.agents/skills/design-visual-interaction/`.
 
-Keep `SKILL.md`, `agents/`, `references/`, `assets/` and `LICENSE` together. Other hosts may use different locations. To pin a version, use a published tag or an exact commit in place of `main`; do not assume a tag exists before it is published.
+Keep `SKILL.md`, `agents/`, `references/`, `assets/` and `LICENSE` together. Other hosts may use different locations. Use a published tag or an exact commit for reproducible installs. The quick-start URL pins this release.
 
 </details>
 
@@ -79,7 +81,8 @@ The entrypoint supplies shared rules and routing. Detailed references load on de
 | [Settings and onboarding](./skills/design-visual-interaction/references/settings-onboarding.md) | Entry points, dependent options and capability-aware presentation |
 | [Motion and feedback](./skills/design-visual-interaction/references/motion-feedback.md) | Interruptible transitions, cleanup and reduced motion |
 | [Color and materials](./skills/design-visual-interaction/references/materials-color.md) | Semantic colors, contrast, compositing and fallbacks |
-| [Optional liquid glass](./skills/design-visual-interaction/references/style-liquid-glass.md) | Clear content layers, constrained distortion and performance limits |
+| [Optional experiment: liquid glass](./skills/design-visual-interaction/references/style-liquid-glass.md) | Clear content layers, constrained distortion and performance limits |
+| [Public worked cases](./skills/design-visual-interaction/references/worked-examples.md) | Compact historical patterns, source links and evidence boundaries |
 | [Verification](./skills/design-visual-interaction/references/verification.md) | Evidence appropriate to the actual change and environment |
 
 ![Component layers and cancellation paths](./skills/design-visual-interaction/assets/component-anatomy.svg)
@@ -102,12 +105,14 @@ Neither companion is copied, bundled, auto-installed or re-licensed here. Reason
 
 ## Examples
 
+[Three minimal usage examples](./docs/usage-examples.md) cover button feedback, settings hierarchy and a read-only audit. [The synthetic button exercise](./docs/evaluation/results.md#1-mature-button-fixture) includes before/after event code; an additional token fixture records a focused style change. [Three real public-source cases](./docs/examples/README.md) now cover React Aria press capture, Radix range commits and Flutter label-style overrides, with pinned sources, retained licenses and bounded before/after checks. [Module routing](./docs/module-routing.md) explains selective loading.
+
 **Audit an existing product**
 
 ```text
 Use $design-visual-interaction to audit visual and interaction consistency.
 Preserve the current product identity. Identify causes from source and
-running evidence. Implement only justified changes and report validation gaps.
+running evidence. Do not modify files; report proposals and validation gaps.
 ```
 
 **Start a new product**
@@ -128,7 +133,7 @@ the fix. Preserve behavior and stored preferences; verify affected consumers.
 
 ## Validation and limits
 
-Initial experimental release. Repository checks cover metadata, local links, module reachability, license/version consistency, scoped privacy patterns, content fingerprints and a clean installation-layout copy. Forward exercises and their limits are documented in [VALIDATION.md](./VALIDATION.md). Static checks cannot establish visual quality or host compatibility.
+Experimental release. v0.3.0 strengthens token extraction and reuse, change-specific verification gates, and optional-glass boundaries. Synthetic fixtures are separate from the three public-source historical cases. Their excerpt/event checks do not establish real-device acceptance or Skill-caused improvement. Repository checks cover metadata, local links, module reachability, license/version consistency, scoped privacy patterns, content fingerprints and a clean installation-layout copy. Forward exercises and their limits are documented in [VALIDATION.md](./VALIDATION.md). Static checks cannot establish visual quality or host compatibility.
 
 The installable execution rules and module references are written in Simplified Chinese. Repository documentation and display metadata default to English, with a Chinese documentation entry. This is not a full bilingual execution-rule translation.
 
@@ -141,6 +146,8 @@ Progressive loading can reduce irrelevant context. Actual token use depends on t
 | [`skills/design-visual-interaction/`](./skills/design-visual-interaction/) | Self-contained installable Skill |
 | [`CHANGELOG.md`](./CHANGELOG.md) / [中文](./CHANGELOG.zh-CN.md) | Release history; current version in [VERSION](./VERSION) |
 | [`VALIDATION.md`](./VALIDATION.md) / [中文](./VALIDATION.zh-CN.md) | Evidence and limitations |
+| [`docs/usage-examples.md`](./docs/usage-examples.md) | Three scoped prompts and a conflict example |
+| [`docs/examples/`](./docs/examples/) | Public upstream before/after source cases, licenses and validation limits |
 | [`docs/evaluation/`](./docs/evaluation/) | Reproducible forward-exercise inputs and observed results |
 | [`docs/sources.md`](./docs/sources.md) | Format provenance and primary specification links |
 | [`scripts/validate.py`](./scripts/validate.py) | Repository-only checks; excluded from the installed Skill |
@@ -148,6 +155,7 @@ Progressive loading can reduce irrelevant context. Actual token use depends on t
 ```bash
 python -m pip install -r requirements-dev.txt
 python scripts/validate.py
+node scripts/check_public_examples.cjs
 python -m unittest discover -s tests
 ```
 

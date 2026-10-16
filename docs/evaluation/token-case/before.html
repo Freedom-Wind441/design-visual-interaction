@@ -1,0 +1,14 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Draft editor</title>
+<link rel="stylesheet" href="theme.css">
+<style>
+button { background: var(--action-fill); color: var(--action-text); border: 0; padding: 0.8rem 1.1rem; border-radius: var(--control-radius); }
+.preview { transition: transform var(--press-duration) var(--press-easing); }
+.preview:active { transform: scale(var(--press-scale)); }
+.save { transition: transform 400ms linear; }
+.save:active { transform: scale(0.85); }
+</style>
+<form><textarea name="draft" aria-label="Draft"></textarea>
+<button class="preview" type="button">Preview</button>
+<button class="save" type="submit">Save</button></form>

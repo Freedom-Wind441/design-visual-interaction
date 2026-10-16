@@ -8,7 +8,7 @@
 
 [English](./README.md) · **简体中文**
 
-[![Version](https://img.shields.io/badge/version-0.2.0-2563eb)](./CHANGELOG.zh-CN.md)
+[![Version](https://img.shields.io/badge/version-0.3.0-2563eb)](./CHANGELOG.zh-CN.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-475569)](./LICENSE)
 [![Validation](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml/badge.svg)](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml)
 
@@ -25,8 +25,10 @@
 在具备 `$skill-installer` 的 Codex 中输入：
 
 ```text
-$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/main/skills/design-visual-interaction
+$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/v0.3.0/skills/design-visual-interaction
 ```
+
+建议固定 **v0.3.0**，保证安装可复现；`main` 用于开发，升级前先看变更记录。
 
 然后直接描述目标：
 
@@ -42,7 +44,7 @@ $skill-installer install https://github.com/Freedom-Wind441/design-visual-intera
 
 将完整的 [`skills/design-visual-interaction/`](./skills/design-visual-interaction/) 复制到宿主规定的位置。Codex 的项目级与用户级位置分别为 `.agents/skills/design-visual-interaction/` 和 `~/.agents/skills/design-visual-interaction/`。
 
-保留 `SKILL.md`、`agents/`、`references/`、`assets/` 与 `LICENSE`。其他宿主请遵循各自文档。需要固定版本时，用已发布的 tag 或准确 commit 替换 `main`；不能在标签发布前假定它已经存在。
+保留 `SKILL.md`、`agents/`、`references/`、`assets/` 与 `LICENSE`。其他宿主请遵循各自文档。需要可复现安装时使用已发布 tag 或准确 commit；快速开始中的链接已固定到本版。
 
 </details>
 
@@ -78,7 +80,8 @@ Skill 不需要运行脚本、API 密钥、固定 MCP 服务或安装依赖包�
 | [设置与引导](./skills/design-visual-interaction/references/settings-onboarding.md) | 入口、下级选项、能力适配 |
 | [动效与反馈](./skills/design-visual-interaction/references/motion-feedback.md) | 动画中断、清理、减少动态效果 |
 | [颜色与材质](./skills/design-visual-interaction/references/materials-color.md) | 语义色、对比、合成、降级 |
-| [可选：液态玻璃](./skills/design-visual-interaction/references/style-liquid-glass.md) | 清晰内容层、限制折射、性能边界 |
+| [可选实验：液态玻璃](./skills/design-visual-interaction/references/style-liquid-glass.md) | 清晰内容层、限制折射、性能边界 |
+| [公开真实案例](./skills/design-visual-interaction/references/worked-examples.md) | 紧凑历史模式、原始来源与验证边界 |
 | [验证与交付](./skills/design-visual-interaction/references/verification.md) | 与实际改动和环境对应的证据 |
 
 ![组件分层与取消路径示意](./skills/design-visual-interaction/assets/component-anatomy.svg)
@@ -101,12 +104,14 @@ Skill 不需要运行脚本、API 密钥、固定 MCP 服务或安装依赖包�
 
 ## 示例
 
+[最小使用案例](./docs/usage-examples.zh-CN.md)包含按钮反馈、设置层级和只读审计；[合成按钮演练](./docs/evaluation/results.md#1-mature-button-fixture)附事件代码前后对照，另有 token 样例记录局部样式变化；[三个公开项目真实案例](./docs/examples/README.zh-CN.md)补充 React Aria 按压、Radix范围提交与Flutter导航字体修复，附固定源码、许可和有界检查；[模块关系图](./docs/module-routing.md)解释按需加载。
+
 **审查已有产品**
 
 ```text
 使用 $design-visual-interaction 审查视觉与交互一致性。
-保留产品特色，从源码与运行证据确定根因，只实施有依据的改动，
-说明实际验证结果及缺口。
+保留产品特色，从源码与运行证据确定根因，不修改文件，
+交付建议并说明实际验证结果及缺口。
 ```
 
 **从零建立基线**
@@ -127,7 +132,7 @@ Skill 不需要运行脚本、API 密钥、固定 MCP 服务或安装依赖包�
 
 ## 验证与限制
 
-这是实验性初版。仓库检查覆盖元数据、本地链接、模块可达性、许可证/版本、限定范围的隐私模式、内容指纹和干净安装布局复制。隔离任务演练及其限制见[验证记录](./VALIDATION.zh-CN.md)。静态检查不能证明视觉品质或宿主兼容性。
+这是实验版本。v0.3.0 补强 token 提取与复用、按改动类型分层验证和玻璃实验边界；合成演练与三组公开源码历史案例分别标记；片段/事件检查不代表实机验收或技能造成的提升。仓库检查覆盖元数据、本地链接、模块可达性、许可证/版本、限定范围的隐私模式、内容指纹和干净安装布局复制。隔离任务演练及其限制见[验证记录](./VALIDATION.zh-CN.md)。静态检查不能证明视觉品质或宿主兼容性。
 
 安装包的执行规则与专项模块使用简体中文；仓库文档和显示元数据默认英文，并提供中文文档入口。此版没有把全部执行规则翻译为英文。
 
@@ -140,6 +145,8 @@ Skill 不需要运行脚本、API 密钥、固定 MCP 服务或安装依赖包�
 | [`skills/design-visual-interaction/`](./skills/design-visual-interaction/) | 自包含的可安装 Skill |
 | [`CHANGELOG.md`](./CHANGELOG.md) / [中文](./CHANGELOG.zh-CN.md) | 更新记录，版本号见 [VERSION](./VERSION) |
 | [`VALIDATION.md`](./VALIDATION.md) / [中文](./VALIDATION.zh-CN.md) | 证据与限制 |
+| [`docs/usage-examples.zh-CN.md`](./docs/usage-examples.zh-CN.md) | 三个有界提示词与冲突示例 |
+| [`docs/examples/`](./docs/examples/) | 公开项目真实差分、原许可及验证限制 |
 | [`docs/evaluation/`](./docs/evaluation/) | 可复现的隔离演练输入及结果 |
 | [`docs/sources.md`](./docs/sources.md) | 格式来源与原始规范链接 |
 | [`scripts/validate.py`](./scripts/validate.py) | 仓库检查，不随技能安装 |
@@ -147,6 +154,7 @@ Skill 不需要运行脚本、API 密钥、固定 MCP 服务或安装依赖包�
 ```bash
 python -m pip install -r requirements-dev.txt
 python scripts/validate.py
+node scripts/check_public_examples.cjs
 python -m unittest discover -s tests
 ```
 

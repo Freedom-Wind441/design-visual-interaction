@@ -54,6 +54,10 @@ Input: [BRIEF.md](./platform-case/BRIEF.md).
 
 Read modules: platform-adaptation, verification, materials-color, buttons. Observed: rejected mechanical unit/API conversion and ARIA on native surfaces, preserved approved system fonts and controls, and separated existing evidence from proposed checks. It did not invent a confirmed defect or uninspected platform threshold. No files or services were changed.
 
+## 6. Existing-token button task (0.3.0)
+
+Task and raw before/after artifacts: [TASK.md](./token-case/TASK.md). A fresh agent received only the revised Skill path and its isolated page, with no expected fix or parent diagnosis. It traced the Save button to existing scale/duration/easing tokens, changed two declarations, retained the shared theme and reduced-motion branch, and did not introduce glass. Parent comparison confirmed the limited diff and native form/button semantics. Chromium was unavailable, so rendering and actual interaction remain unverified. This is one additional bounded observation, not proof of universal rule reliability.
+
 ## Interpretation
 
-These exercises support that the entrypoint can route five concrete tasks and constrain unsupported claims in those contexts. They do not establish broad cross-stack effectiveness, universal host compliance, repeatability across models, token savings or improved user satisfaction. No numeric success-rate claim is made.
+These exercises support that the entrypoint can route the five original tasks and one additional token task and constrain unsupported claims in those contexts. They do not establish broad cross-stack effectiveness, universal host compliance, repeatability across models, token savings or improved user satisfaction. No numeric success-rate claim is made.

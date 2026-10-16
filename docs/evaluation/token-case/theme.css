@@ -1,0 +1,11 @@
+:root {
+  --action-fill: #2358bf;
+  --action-text: white;
+  --control-radius: 0.6rem;
+  --press-scale: 0.98;
+  --press-duration: 90ms;
+  --press-easing: ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --press-duration: 0ms; }
+}
