@@ -1,0 +1,23 @@
+name: Validate Skill
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4; matches companion repository
+      - name: Install validation dependency
+        run: python3 -m pip install -r requirements-dev.txt
+      - name: Validate release and installation layout
+        run: python3 scripts/validate.py
+      - name: Exercise release-contract failures
+        run: python3 -m unittest discover -s tests
+      - name: Exercise button event-model fixture
+        run: node --test docs/evaluation/button-case/press.test.cjs
