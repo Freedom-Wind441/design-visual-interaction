@@ -1,0 +1,1 @@
+Keep the current styling, navigation and stored settings. Use Node's built-in test runner for event-model checks. Do not change range input behavior. This is a local evaluation fixture; no deployment is requested.

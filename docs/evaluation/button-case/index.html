@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Local Control Panel</title><style>
+:root{color-scheme:light dark;--accent:#1967d2}
+button{min-height:44px;border:1px solid currentColor;border-radius:8px;padding:8px 16px}
+button .surface{display:inline-block;transition:transform 120ms ease}
+button[data-pressed] .surface{transform:scale(.96)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){button .surface{transition:none;transform:none}}
+</style><main><h1>Control panel</h1><button id="refresh"><span class="surface">Refresh</span></button>
+<button id="archive"><span class="surface">Archive</span></button><p>Count: <output id="count">0</output></p>
+<label>Amount <input id="amount" type="range" min="0" max="100" value="25"></label><output id="value">25</output></main></html>
