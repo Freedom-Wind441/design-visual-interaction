@@ -18,7 +18,7 @@ class ReleaseContractTests(unittest.TestCase):
         shutil.copytree(ROOT / "skills" / validator.NAME, self.skill)
 
     def test_valid_standalone_copy(self):
-        self.assertEqual(len(validator.validate_skill(self.skill)), 17)
+        self.assertEqual(len(validator.validate_skill(self.skill)), 18)
 
     def test_duplicate_metadata_rejected(self):
         path = self.skill / "SKILL.md"
