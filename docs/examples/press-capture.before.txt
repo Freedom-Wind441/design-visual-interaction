@@ -1,0 +1,4 @@
+if ('releasePointerCapture' in target) {
+            target.releasePointerCapture(e.pointerId);
+          }
+

@@ -1,0 +1,10 @@
+final TextStyle? effectiveSelectedLabelTextStyle = info.labelTextStyle?.resolve(selectedState)
+          ?? navigationBarTheme.labelTextStyle?.resolve(selectedState)
+          ?? defaults.labelTextStyle!.resolve(selectedState);
+        final TextStyle? effectiveUnselectedLabelTextStyle = info.labelTextStyle?.resolve(unselectedState)
+          ??  navigationBarTheme.labelTextStyle?.resolve(unselectedState)
+          ?? defaults.labelTextStyle!.resolve(unselectedState);
+        final TextStyle? effectiveDisabledLabelTextStyle = info.labelTextStyle?.resolve(disabledState)
+          ?? navigationBarTheme.labelTextStyle?.resolve(disabledState)
+          ?? defaults.labelTextStyle!.resolve(disabledState);
+

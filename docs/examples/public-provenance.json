@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "press-capture",
+      "repository": "adobe/react-spectrum",
+      "commit": "a9ce2379c424ab80612933451dd3fee4181ac39a",
+      "parent": "808343c2b7ebf7d58443d0a53b88b135e1ba5461",
+      "path": "packages/@react-aria/interactions/src/usePress.ts",
+      "url": "https://github.com/adobe/react-spectrum/commit/a9ce2379c424ab80612933451dd3fee4181ac39a",
+      "before_url": "https://github.com/adobe/react-spectrum/blob/808343c2b7ebf7d58443d0a53b88b135e1ba5461/packages/@react-aria/interactions/src/usePress.ts",
+      "after_url": "https://github.com/adobe/react-spectrum/blob/a9ce2379c424ab80612933451dd3fee4181ac39a/packages/@react-aria/interactions/src/usePress.ts",
+      "upstream_test_files": [
+        "packages/@react-aria/interactions/test/usePress.test.js"
+      ],
+      "source_blob_after": "b9caaec7f6b044f1ad1371d3e933484b556cf806",
+      "before_excerpt_sha256": "0a3c6d2db031d11cd75b2d081206e026dcecf66fa417796efcb0a61996006852",
+      "after_excerpt_sha256": "7901cf8ca10ef34a77c99e9b8168cafe748d5e013f02111beaca672327f68599"
+    },
+    {
+      "id": "slider-commit",
+      "repository": "radix-ui/primitives",
+      "commit": "78a9d2baedf2e009e3a3786e46e1a29edc640162",
+      "parent": "e6e99a5d43a1b537baf8dd19f8a5db67b3ae6080",
+      "path": "packages/react/slider/src/slider.tsx",
+      "url": "https://github.com/radix-ui/primitives/commit/78a9d2baedf2e009e3a3786e46e1a29edc640162",
+      "before_url": "https://github.com/radix-ui/primitives/blob/e6e99a5d43a1b537baf8dd19f8a5db67b3ae6080/packages/react/slider/src/slider.tsx",
+      "after_url": "https://github.com/radix-ui/primitives/blob/78a9d2baedf2e009e3a3786e46e1a29edc640162/packages/react/slider/src/slider.tsx",
+      "upstream_test_files": [],
+      "source_blob_after": "03bac4c71f0336680fc859ad79eb4ae957647809",
+      "before_excerpt_sha256": "00828c8b85eabb96afa4253329c1e58bf29b0d097456d3ddc8ce9cc5d5b324d4",
+      "after_excerpt_sha256": "f604429340ff0f172fac295eb22c0ef36a5eb5b13cbb319ce9c0ed9c73c0fef8"
+    },
+    {
+      "id": "navigation-theme",
+      "repository": "flutter/flutter",
+      "commit": "148be5f894aa64d7c4e8318100b5db5ae3c9b823",
+      "parent": "423aa2ac7476120ad522a577bda1dae77ffa3ff4",
+      "path": "packages/flutter/lib/src/material/navigation_bar.dart",
+      "url": "https://github.com/flutter/flutter/commit/148be5f894aa64d7c4e8318100b5db5ae3c9b823",
+      "before_url": "https://github.com/flutter/flutter/blob/423aa2ac7476120ad522a577bda1dae77ffa3ff4/packages/flutter/lib/src/material/navigation_bar.dart",
+      "after_url": "https://github.com/flutter/flutter/blob/148be5f894aa64d7c4e8318100b5db5ae3c9b823/packages/flutter/lib/src/material/navigation_bar.dart",
+      "upstream_test_files": [
+        "packages/flutter/test/material/navigation_bar_test.dart"
+      ],
+      "source_blob_after": "678971499ef16a5443d0d523f78b449f82e20725",
+      "before_excerpt_sha256": "fda501179cb0bf3d14779f492e8e407c6f0f5c94d74018319afa4132fc245e23",
+      "after_excerpt_sha256": "52cf8bb0ce2eb4c10ed7fcef1fcdb22ca7165b6a1eaff837e3cf28594ec71eb9"
+    }
+  ]
+}
