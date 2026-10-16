@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+  <title id="title">Component layers and cancel handling</title>
+  <desc id="desc">Conceptual diagram, not a product mockup. Separate hit target, animated surface and clear content. A cancelled press returns to idle without activation.</desc>
+  <rect width="960" height="440" rx="24" fill="#f8fafc"/>
+  <g font-family="sans-serif" fill="#0f172a">
+    <text x="36" y="46" font-size="24" font-weight="700">Keep input stable. Keep content clear.</text>
+    <text x="36" y="74" font-size="15" fill="#475569">Conceptual diagram · adapt roles and dimensions to the project</text>
+    <rect x="36" y="104" width="424" height="282" rx="16" fill="white" stroke="#cbd5e1"/>
+    <rect x="68" y="132" width="360" height="144" rx="20" fill="#eff6ff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 5"/>
+    <rect x="108" y="160" width="280" height="88" rx="24" fill="#dbeafe" stroke="#60a5fa"/>
+    <text x="248" y="214" font-size="23" text-anchor="middle" font-weight="700">Action</text>
+    <text x="68" y="306" font-size="16">1 · Stable layout and hit target</text>
+    <text x="68" y="334" font-size="16">2 · Independent visual surface</text>
+    <text x="68" y="362" font-size="16">3 · Readable content and focus</text>
+    <rect x="484" y="104" width="440" height="282" rx="16" fill="white" stroke="#cbd5e1"/>
+    <text x="512" y="144" font-size="19" font-weight="700">Check interruption paths</text>
+    <text x="512" y="187" font-size="17">Press → Release → Activate once</text>
+    <text x="512" y="224" font-size="17">Press → Cancel → Idle, no action</text>
+    <text x="512" y="272" font-size="16" fill="#475569">Also check blur, capture loss, disable,</text>
+    <text x="512" y="299" font-size="16" fill="#475569">removal, rapid input and reduced motion.</text>
+    <text x="512" y="352" font-size="16" fill="#475569">A screenshot cannot verify these paths.</text>
+    <text x="36" y="417" font-size="14" fill="#64748b">Original schematic · illustrative, not approved device output · no fixed design tokens implied</text>
+  </g>
+</svg>

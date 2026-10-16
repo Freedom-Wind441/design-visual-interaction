@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="490" viewBox="0 0 960 490" role="img" aria-labelledby="title desc">
+  <title id="title">Task emphasis and information grouping</title>
+  <desc id="desc">An illustrative comparison of equal emphasis and task-based hierarchy. Preserve all information; adjust grouping and emphasis. This is not a tested application or a fixed layout.</desc>
+  <rect width="960" height="490" rx="24" fill="#f8fafc"/>
+  <g font-family="sans-serif" fill="#0f172a">
+    <text x="36" y="46" font-size="24" font-weight="700">Hierarchy follows the task.</text>
+    <text x="36" y="75" font-size="15" fill="#475569">Same information · different emphasis · illustrative only</text>
+    <rect x="36" y="104" width="426" height="326" rx="16" fill="white" stroke="#cbd5e1"/>
+    <rect x="486" y="104" width="438" height="326" rx="16" fill="white" stroke="#cbd5e1"/>
+    <text x="60" y="139" font-size="18" font-weight="700">Equal emphasis</text>
+    <text x="510" y="139" font-size="18" font-weight="700">Task: resolve failed imports</text>
+    <g fill="#f1f5f9" stroke="#cbd5e1">
+      <rect x="60" y="158" width="378" height="69" rx="8"/>
+      <rect x="60" y="244" width="378" height="69" rx="8"/>
+      <rect x="60" y="330" width="378" height="69" rx="8"/>
+    </g>
+    <text x="80" y="200" font-size="20">Import issues</text>
+    <text x="80" y="286" font-size="20">Library summary</text>
+    <text x="80" y="372" font-size="20">Document details</text>
+    <rect x="510" y="158" width="390" height="104" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="530" y="191" font-size="22" font-weight="700">Import issues</text>
+    <text x="530" y="218" font-size="15" fill="#475569">Keep the issue and recovery together.</text>
+    <text x="530" y="245" font-size="16" fill="#1d4ed8">Retry failed imports</text>
+    <text x="514" y="300" font-size="16" fill="#475569">Library summary</text>
+    <path d="M510 319H900" stroke="#e2e8f0"/>
+    <text x="514" y="353" font-size="18" font-weight="700">Document details</text>
+    <text x="514" y="383" font-size="15" fill="#475569">Secondary content remains available.</text>
+    <text x="36" y="462" font-size="14" fill="#64748b">Original schematic · no measured improvement, approved product layout, or universal spacing implied</text>
+  </g>
+</svg>
