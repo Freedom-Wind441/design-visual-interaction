@@ -2,7 +2,9 @@
 
 [简体中文](./VALIDATION.zh-CN.md)
 
-Release: **0.3.0**, 2026-10-16 (Asia/Shanghai).
+Release: **0.3.1**, 2026-10-29 (Asia/Shanghai).
+
+The previous 0.3.0 exercise results below are historical. Version 0.3.1 adds interface-copy rules; static/package and existing fixture checks do not demonstrate real-world usability or screen-reader behavior.
 
 ## Scope
 

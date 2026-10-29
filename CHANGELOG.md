@@ -2,6 +2,12 @@
 
 [简体中文](./CHANGELOG.zh-CN.md)
 
+## 0.3.1 — 2026-10-29
+
+- Make concise interface copy a shared baseline: remove explanations and repeated hints unrelated to the user's task, shorten labels, and use recognizable symbols when their meaning is clear.
+- Distinguish missing values from real zero; retain actionable errors, permission effects, irreversible consequences, privacy information, essential status and accessible names. Respect explicit user choices and disclose reduced visible context.
+- Check affected states, languages, text scaling, narrow layouts and shared consumers; static checks do not establish visual or assistive-technology acceptance.
+
 ## 0.3.0 — 2026-10-16
 
 ### Changes

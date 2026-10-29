@@ -8,7 +8,7 @@ A modular Agent Skill for UI consistency, focused interaction fixes, and gradual
 
 **English** · [简体中文](./README.zh-CN.md)
 
-[![Version](https://img.shields.io/badge/version-0.3.0-2563eb)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.3.1-2563eb)](./CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-475569)](./LICENSE)
 [![Validation](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml/badge.svg)](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml)
 
@@ -25,10 +25,10 @@ A modular Agent Skill for UI consistency, focused interaction fixes, and gradual
 In Codex with `$skill-installer`, ask:
 
 ```text
-$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/v0.3.0/skills/design-visual-interaction
+$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/v0.3.1/skills/design-visual-interaction
 ```
 
-Pin **v0.3.0** for reproducible use. `main` is the development branch; upgrade deliberately after reviewing the changelog.
+Pin **v0.3.1** for reproducible use. `main` is the development branch; upgrade deliberately after reviewing the changelog.
 
 Then describe the outcome in ordinary language:
 
