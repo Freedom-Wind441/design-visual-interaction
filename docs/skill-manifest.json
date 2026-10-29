@@ -1,7 +1,7 @@
 {
   "sha256": {
     "LICENSE": "2554f9f773fe6eb46e03ac060d677e9bca28d53a48e6f15522e0a8fb0d7e0d8e",
-    "SKILL.md": "706a0d86892751f4f8bd87ae5753d2a4dcb0fc8a612fba7020deabad2b617712",
+    "SKILL.md": "dbbf1f2b1084b0420ac4a29c9324b8ce284be1cf98b8238a5afad21f546bf189",
     "agents/openai.yaml": "a71993d9cc43e4f9f3da1a7a17a9f4ba09d7102dc751ad688f1717eac7479ae5",
     "assets/component-anatomy.svg": "6452eb107b6586e62eb3dd434ae99338fd1b5bdbe5ef47134da19acb9d6a1f1f",
     "assets/task-hierarchy.svg": "8c8e00baaa9d4f1027deedaca94d88c10040e25028219ab121bf901bf7ba7afd",
@@ -14,10 +14,10 @@
     "references/settings-onboarding.md": "03ad688299b81f04991bd18fd91a00080ea43c14168420f1705ee452a11aac93",
     "references/sliders-input.md": "23ac9af52cb6f68f6eca23e5c36ac50612f8626b0c3ffba2db021c3244367e20",
     "references/style-liquid-glass.md": "27e77a9d2b28e6fc0157abced53c5c50774c8028d9531cf69766a40759cc40bd",
-    "references/typography-layout.md": "9756b67f9538a000864881085dabb867ffedb8fb83695e627e4976a0163692e7",
+    "references/typography-layout.md": "accfb06217ad74bcdb80adef44fd7eea8fab5eae2c895fb03127cf6cd8ff4dc4",
     "references/verification.md": "601760209f68bcf3dc8c45ed7e9962473cfcf70e2df7ec69b9f21ec0aa2fe3bf",
     "references/visual-composition.md": "2920d40c1d4bcad4612c12342afe814cf7fde4f096359c187ae148a1a14baf8d",
     "references/worked-examples.md": "25f8acd180077514e3dd053f9cbab17318bba31698688e801294259109654c0b"
   },
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
