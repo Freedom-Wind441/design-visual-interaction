@@ -8,7 +8,7 @@
 
 [English](./README.md) · **简体中文**
 
-[![Version](https://img.shields.io/badge/version-0.3.0-2563eb)](./CHANGELOG.zh-CN.md)
+[![Version](https://img.shields.io/badge/version-0.3.1-2563eb)](./CHANGELOG.zh-CN.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-475569)](./LICENSE)
 [![Validation](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml/badge.svg)](https://github.com/Freedom-Wind441/design-visual-interaction/actions/workflows/validate.yml)
 
@@ -25,10 +25,10 @@
 在具备 `$skill-installer` 的 Codex 中输入：
 
 ```text
-$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/v0.3.0/skills/design-visual-interaction
+$skill-installer install https://github.com/Freedom-Wind441/design-visual-interaction/tree/v0.3.1/skills/design-visual-interaction
 ```
 
-建议固定 **v0.3.0**，保证安装可复现；`main` 用于开发，升级前先看变更记录。
+建议固定 **v0.3.1**，保证安装可复现；`main` 用于开发，升级前先看变更记录。
 
 然后直接描述目标：
 
